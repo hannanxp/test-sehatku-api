@@ -26,6 +26,10 @@ class Doctor extends Model
         'photo'
     ];
     
+    protected $hidden = [
+      'password'
+    ];
+    
     public function doctorSpecialist()
     {
         return $this->belongsTo('App\DoctorSpecialist');
