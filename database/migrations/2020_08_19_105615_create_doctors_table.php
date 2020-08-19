@@ -19,7 +19,7 @@ class CreateDoctorsTable extends Migration
             $table->enum('title', ['dr', 'prof']);
             $table->string('fullname', 100);
             $table->enum('gender', ['pria', 'wanita']);
-            $table->integer('specialist_id');
+            $table->foreignId('doctor_specialist_id')->index();
             $table->string('experience', 50);
             $table->string('education', 100);
             $table->string('str_no', 100);
