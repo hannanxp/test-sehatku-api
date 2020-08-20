@@ -4,6 +4,12 @@
   <div class="col-sm-8 offset-sm-2">
     <h1 class="display-3">Tambah Dokter</h1>
     <div>
+      @if(session()->has('success'))
+      <div class="alert alert-success">
+        {{ session()->get('success') }}
+      </div>
+      @endif
+      
       @if ($errors->any())
       <div class="alert alert-danger">
         <ul>
