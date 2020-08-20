@@ -21,32 +21,30 @@
               <label for="first_name">Nama Dokter</label>
               <div class="form-group row">
                 <div class="col-sm-4">
-                  <select class="form-control">
-                    <option>Prof</option>
-                    <option>dr</option>
+                  <select name="title" class="form-control">
+                    <option value="prof">Prof</option>
+                    <option value="dr">dr</option>
                   </select>
                 </div>
                 <div class="col-sm-8">
-                  <input type="text" class="form-control" name="first_name"/>
+                  <input type="text" class="form-control" name="fullname"/>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="first_name">Jenis Kelamin</label>
+              <label for="gender">Jenis Kelamin</label>
               <div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                  <label class="form-check-label" for="inlineRadio1">Pria</label>
+                  <input class="form-check-input" type="radio" name="gender" id="genderPria" value="pria">
+                  <label class="form-check-label" for="genderPria">Pria</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                  <label class="form-check-label" for="inlineRadio2">Wanita</label>
+                  <input class="form-check-input" type="radio" name="gender" id="genderWanita" value="wanita">
+                  <label class="form-check-label" for="genderWanita">Wanita</label>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -54,29 +52,17 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="first_name">Spesialisasi</label>
-              <input type="text" class="form-control" name="first_name"/>
+              <label for="doctor_specialist_id">Spesialisasi</label>
+              <select name="doctor_specialist_id" class="form-control">
+                <option value="2">Akupuntur</option>
+                <option value="4">Bedah Anak</option>
+              </select>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="first_name">Pengalaman</label>
-              <input type="text" class="form-control" name="first_name"/>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">    
-              <label for="first_name">Pendidikan Terakhir</label>
-              <input type="text" class="form-control" name="first_name"/>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">    
-              <label for="first_name">No. STR</label>
-              <input type="text" class="form-control" name="first_name"/>
+              <label for="experience">Pengalaman</label>
+              <input type="text" class="form-control" name="experience"/>
             </div>
           </div>
         </div>
@@ -84,29 +70,14 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="first_name">Tempat Praktik</label>
-              <input type="text" class="form-control" name="first_name"/>
+              <label for="education">Pendidikan Terakhir</label>
+              <input type="text" class="form-control" name="education"/>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="first_name">No. SIP</label>
-              <input type="text" class="form-control" name="first_name"/>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">    
-              <label for="first_name">Status</label>
-              <input type="text" class="form-control" name="first_name"/>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">    
-              <label for="first_name">No. Handphone</label>
-              <input type="text" class="form-control" name="first_name"/>
+              <label for="str_no">No. STR</label>
+              <input type="text" class="form-control" name="str_no"/>
             </div>
           </div>
         </div>
@@ -114,14 +85,47 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="first_name">Email</label>
-              <input type="text" class="form-control" name="first_name"/>
+              <label for="place">Tempat Praktik</label>
+              <input type="text" class="form-control" name="place"/>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="first_name">Password</label>
-              <input type="text" class="form-control" name="first_name"/>
+              <label for="sip_no">No. SIP</label>
+              <input type="text" class="form-control" name="sip_no"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">    
+              <label for="status">Status</label>
+              <select name="status" class="form-control">
+                <option value="active">Aktif</option>
+                <option value="inactive">Tidak Aktif</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">    
+              <label for="phone">No. Handphone</label>
+              <input type="text" class="form-control" name="phone"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">    
+              <label for="email">Email</label>
+              <input type="text" class="form-control" name="email"/>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">    
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password"/>
             </div>
           </div>
         </div>
@@ -129,8 +133,8 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">    
-              <label for="first_name">Deskripsi</label>
-              <input type="text" class="form-control" name="first_name"/>
+              <label for="description">Deskripsi</label>
+              <textarea class="form-control" name="description"></textarea>
             </div>
           </div>
         </div>
