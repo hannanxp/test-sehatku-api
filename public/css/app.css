@@ -85,7 +85,11 @@ body {
   float: left;
   width: 170px;
   background-color: #2b8e8e;
-  min-height: 900px;
+}
+#my-app-spacer {
+  background-color: #2b8e8e;
+  min-height: 60px;
+  height: calc(100vh - 1000px);
 }
 #my-app-content {
   width: 1270px;  
@@ -101,7 +105,10 @@ body {
   height: 70px;
   background-color: #f4f4f4;
 }
-
+#footer-corner {
+  width: 170px;
+  float: left;
+}
 /**/
 
 
