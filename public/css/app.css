@@ -75,25 +75,22 @@ body {
   background-color: #f8fafc;
 }
 
-#my-app {
+/**/
+
+#my-app-center {
   width: 1440px;
   margin: auto;
-  height: 100vh;
-  display: flex;
 }
-
-#my-app-sidebar {
+#my-app-sidebar-left {
   float: left;
   width: 170px;
   background-color: #2b8e8e;
   min-height: 900px;
 }
-
 #my-app-content {
-  float: left;
   width: 1270px;  
+  float: left;
 }
-
 #my-app-footer {
   clear: both;
   width: 1440px;
@@ -104,6 +101,9 @@ body {
   height: 70px;
   background-color: #f4f4f4;
 }
+
+/**/
+
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
