@@ -2,7 +2,8 @@
 @section('main')
 
 <div class="module-title">Tambah Dokter</div>
-<div>
+
+<div class="main-card">
   @if(session()->has('success'))
   <div class="alert alert-success">
     {{ session()->get('success') }}

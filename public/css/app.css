@@ -146,6 +146,17 @@ body {
   letter-spacing: normal;
   color: #36454f;
 }
+.main-card {
+  margin-top: 55px;
+  border-radius: 8px;
+  border: solid 1px #dadada;
+  background-color: #ffffff;
+  padding-top: 37px;
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-bottom: 37px;
+}
+
 /**/
 
 
