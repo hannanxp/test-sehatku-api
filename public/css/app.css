@@ -152,10 +152,31 @@ body {
   border: solid 1px #dadada;
   background-color: #ffffff;
   padding-top: 37px;
-  padding-left: 47px;
-  padding-right: 47px;
+  padding-left: 27px;
+  padding-right: 27px;
   padding-bottom: 37px;
 }
+.btn-upload {
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #70cbcf;
+  margin: auto;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.text-upload{
+  font-size: 10px;
+  text-align: center;
+  color: #a7a7a7;
+}
+
 
 /**/
 

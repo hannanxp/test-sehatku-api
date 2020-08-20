@@ -20,7 +20,7 @@
         <div>
           <img src="{{asset('img/sidemenu.jpg')}}">
         </div>
-        <div style="height: 200px"></div>
+        <div style="height: 300px"></div>
         <div>
           <img src="{{asset('img/setting.jpg')}}">
         </div>

@@ -24,8 +24,16 @@
 
     <div class="row">
       <div class="col-md-2">
-        <div class="form-group">    
-          <label for="experience">Gambar</label>
+        <div class="text-center">
+          <div>
+            <img src="{{asset('img/foto.jpg')}}">
+          </div>
+          <div class="btn-upload"> + Upload Foto</div>
+          <div class="text-upload">
+            Format gambar .jpg .jpeg .png dan ukuran minimum 300 x 300px dan Max Size 100kb
+          </div>
+        </div>  
+        <div class="form-group">
           <textarea class="form-control" name="photo"></textarea>
         </div>
       </div>
