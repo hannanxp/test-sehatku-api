@@ -13,7 +13,12 @@
   <body>
     <div id="my-app">
       <div id="my-app-sidebar">
-        sidebar
+        <div>
+          <img src="{{asset('img/corner.jpg')}}">
+        </div>
+        <div>
+          <img src="{{asset('img/sidemenu.jpg')}}">
+        </div>
       </div>
       <div id="my-app-content">
         konten

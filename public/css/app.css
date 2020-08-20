@@ -83,6 +83,8 @@ body {
 #my-app-sidebar {
   float: left;
   width: 170px;
+  background-color: #2b8e8e;
+  min-height: 1000px;
 }
 
 #my-app-content {
@@ -90,10 +92,8 @@ body {
   width: 1270px;
 }
 
-.Rectangle-32 {
-  width: 170px;
-  height: 1428px;
-  background-color: #2b8e8e;
+#div-photo-profile {
+  height: 143px;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
