@@ -78,22 +78,31 @@ body {
 #my-app {
   width: 1440px;
   margin: auto;
+  height: 100vh;
+  display: flex;
 }
 
 #my-app-sidebar {
   float: left;
   width: 170px;
   background-color: #2b8e8e;
-  min-height: 1000px;
+  min-height: 900px;
 }
 
 #my-app-content {
   float: left;
-  width: 1270px;
+  width: 1270px;  
 }
 
-#div-photo-profile {
-  height: 143px;
+#my-app-footer {
+  clear: both;
+  width: 1440px;
+  height: 60px;
+}
+
+#top-header {
+  height: 70px;
+  background-color: #f4f4f4;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {

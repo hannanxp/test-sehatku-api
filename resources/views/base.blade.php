@@ -11,6 +11,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   </head>
   <body>
+
     <div id="my-app">
       <div id="my-app-sidebar">
         <div>
@@ -19,11 +20,22 @@
         <div>
           <img src="{{asset('img/sidemenu.jpg')}}">
         </div>
+        <div style="height: 300px; background-color: #2b8e8e;"></div>
+        <div>
+          <img src="{{asset('img/setting.jpg')}}">
+        </div>
       </div>
       <div id="my-app-content">
+        <div id="top-header">
+          Dashboard
+        </div>
         konten
         @yield('main')
       </div>
+
     </div>
-  </body>
+
+  </div>
+
+</body>
 </html>
