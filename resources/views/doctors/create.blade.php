@@ -1,7 +1,7 @@
 @extends('base')
 @section('main')
 
-<h1 class="display-3">Tambah Dokter</h1>
+<div class="module-title">Tambah Dokter</div>
 <div>
   @if(session()->has('success'))
   <div class="alert alert-success">

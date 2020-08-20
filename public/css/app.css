@@ -133,6 +133,17 @@ body {
 
 #my-app-body {
   clear: both;
+  padding: 40px;
+}
+
+.module-title {
+  font-size: 36px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #36454f;
 }
 /**/
 
