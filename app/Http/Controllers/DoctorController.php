@@ -74,7 +74,7 @@ class DoctorController extends Controller
             'status' => $request->input('status'),
             'phone' => $request->input('phone'),
             'email' => $request->input('email'),
-            'password' => $request->input('password'),
+            'password' => app('hash')->make($request->input('password')),
             'description' => $request->input('description'),
             'photo' => $request->input('photo')
         ]);
