@@ -34,5 +34,6 @@ class Doctor extends Model
     {
         return $this->belongsTo('App\DoctorSpecialist');
     }
+    
 
 }

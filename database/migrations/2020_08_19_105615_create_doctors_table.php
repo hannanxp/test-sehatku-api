@@ -15,7 +15,7 @@ class CreateDoctorsTable extends Migration
     {
         Schema::create('doctors', function (Blueprint $table) {
             $table->id();
-            $table->char('id_no', 20)->index();
+            $table->char('id_no', 20)->nullable()->index(); // tidak disetbukan di spek tugas, tapi ada di tampilan
             $table->enum('title', ['dr', 'prof']);
             $table->string('fullname', 100);
             $table->enum('gender', ['pria', 'wanita']);
