@@ -29,7 +29,18 @@
         </div>
       </div>
       <div id="my-app-content">
-        @yield('main')
+        <div id="top-header">
+          <div id="top-header-left">
+            <span class="top-header-title">Doctor</span>
+          </div>
+          <div id="top-header-right">
+              <img src="{{asset('img/top-menu.jpg')}}">
+          </div>
+        </div>
+        <div id="my-app-body">
+          @yield('main')
+        </div>
+
       </div>
       <div id="my-app-footer">
         <div id="footer-corner"><img src="{{asset('img/corner2.jpg')}}"></div>

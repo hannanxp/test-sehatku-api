@@ -109,6 +109,31 @@ body {
   width: 170px;
   float: left;
 }
+
+#top-header-left {
+  float: left;
+  width: 920px;
+  padding-top: 19px;
+  padding-left: 40px;
+}
+#top-header-right {
+  float: left;
+  width: 350px;
+}
+
+.top-header-title {
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #36454f;
+}
+
+#my-app-body {
+  clear: both;
+}
 /**/
 
 
