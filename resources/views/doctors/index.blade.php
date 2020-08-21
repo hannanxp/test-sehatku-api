@@ -8,6 +8,27 @@
     <div>
       <a href="{{ route('doctors.create')}}" class="btn btn-primary">Tambah Dokter</a>
     </div>
+
+
+    <table>
+      <tr>
+        <th>Nama</th>
+        <th>Foto</th>
+      </tr>
+      @foreach ($doctors as $doctor)
+      <tr>
+        <td>{{$doctor->fullname}}</td>
+        <td>
+          <img style="width: 120px" src="{{$doctor->photo}}">
+        </td>
+      </tr>
+      @endforeach
+    </table>
+
+
+
+
+
   </div>
 </div>
 @endsection
