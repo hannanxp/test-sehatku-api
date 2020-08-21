@@ -195,7 +195,12 @@
           reader.onload = function (e) {
             $("#photo-preview").attr("src", e.target.result);
             $("#input-photo").val(e.target.result);
+            
+            var pic_size = Math.round(input.files[0].size / 1024); // KB
+            console.log(pic_size);
           };
+          
+          
 
           reader.readAsDataURL(input.files[0]); // convert to base64 string
         }
