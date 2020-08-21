@@ -141,9 +141,9 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label class="input-label" for="status">Status</label>
-              <select name="status" class="form-control">
-                <option value="active" @if (old('status') == 'active') sinactiveelected="selected" @endif >Aktif</option>
-                <option value="inactive" @if (old('status') == 'inactive') selected="selected" @endif >Tidak Aktif</option>
+              <select id="input-status" name="status" class="form-control">
+                <option style="color: #64da6e" value="active" @if (old('status') == 'active') sinactiveelected="selected" @endif >Aktif</option>
+                <option style="color: #ff0000" value="inactive" @if (old('status') == 'inactive') selected="selected" @endif >Tidak Aktif</option>
               </select>
             </div>
           </div>
@@ -174,7 +174,7 @@
           <div class="col-md-12">
             <div class="form-group">    
               <label class="input-label" for="description">Deskripsi</label>
-              <textarea class="form-control" name="description">{{old('description')}}</textarea>
+              <textarea rows="5" class="form-control" name="description">{{old('description')}}</textarea>
             </div>
           </div>
         </div>
@@ -229,6 +229,20 @@
       $("#file-photo").change(function () {
         readURL(this);
       });
+      
+      checkStatus();
+      function checkStatus() {
+        if ($("#input-status").val() === 'active') {
+            $("#input-status").css('color', '#64da6e');
+        } else {
+            $("#input-status").css('color', '#ff0000');
+        }
+      };
+      $("#input-status").change(function(){
+          checkStatus();
+      });
+      
+      
 
     });
 
