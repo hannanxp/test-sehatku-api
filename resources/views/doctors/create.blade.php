@@ -183,7 +183,9 @@
 </div>
 
 <script>
-    console.log("hellooo");
+    jQuery(function($){
+       
+    });
 </script>
 
 @endsection
