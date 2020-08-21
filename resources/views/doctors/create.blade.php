@@ -45,8 +45,8 @@
               <div class="form-group row">
                 <div class="col-sm-4">
                   <select name="title" class="form-control">
-                    <option value="prof">Prof</option>
-                    <option value="dr">dr</option>
+                    <option value="prof" @if (old('title') == 'prof') selected="selected" @endif >Prof</option>
+                    <option value="dr" @if (old('title') == 'dr') selected="selected" @endif>dr</option>
                   </select>
                 </div>
                 <div class="col-sm-8">
@@ -78,7 +78,7 @@
               <label for="doctor_specialist_id">Spesialisasi</label>
               <select name="doctor_specialist_id" class="form-control">
                 @foreach ($specialists as $sp)
-                <option value="{{$sp->id}}">{{$sp->name}}</option>
+                <option value="{{$sp->id}}"  @if (old('doctor_specialist_id') == $sp->id) selected="selected" @endif >{{$sp->name}}</option>
                 @endforeach
               </select>
             </div>
@@ -126,8 +126,8 @@
             <div class="form-group">    
               <label for="status">Status</label>
               <select name="status" class="form-control">
-                <option value="active">Aktif</option>
-                <option value="inactive">Tidak Aktif</option>
+                <option value="active" @if (old('status') == 'active') sinactiveelected="selected" @endif >Aktif</option>
+                <option value="inactive" @if (old('status') == 'inactive') selected="selected" @endif >Tidak Aktif</option>
               </select>
             </div>
           </div>
@@ -158,8 +158,8 @@
           <div class="col-md-12">
             <div class="form-group">    
               <label for="description">Deskripsi</label>
-              <textarea class="form-control" name="description" value="{{old('description')}}"></textarea>
-            </div>description
+              <textarea class="form-control" name="description">{{old('description')}}</textarea>
+            </div>
           </div>
         </div>
 
