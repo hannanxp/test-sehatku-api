@@ -64,7 +64,9 @@
                   <input type="text" class="form-control" name="fullname" value="{{old('fullname')}}"/>
                 </div>
                 @error('fullname')
-                <div style="margin-left: 15px" class="alert alert-danger">{{ $message }}</div>
+                <div class="col-sm-12">
+                  <div class="alert alert-danger">{{ $message }}</div>
+                </div>
                 @enderror
               </div>
             </div>
