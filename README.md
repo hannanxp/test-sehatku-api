@@ -1,6 +1,6 @@
-## Test Laravel Sehatqu
+## Test Laravel Sehatq
 
-Ini adalah hasil pekerjaan saya (Hannan Gigih Prastawa) untuk Tes Laravel Sehatqu.
+Ini adalah hasil pekerjaan saya (Hannan Gigih Prastawa) untuk Tes Laravel Sehatq.
 
 ## Requirement
 -   PHP >= 7.2.5
