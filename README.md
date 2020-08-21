@@ -19,7 +19,7 @@ Ini adalah hasil pekerjaan saya (Hannan Gigih Prastawa) untuk Tes Laravel Sehatq
 
 ## Instalasi
 
--   `git clone <repo-ini>`
+-   `git clone https://github.com/hannanxp/test-sehatku-api`
 -   `cd <nama-projek>`
 -   `cp .env-example .env`
 -   `edit .env bagian DB_xxx, sesuaikan dengan kondisi environment`

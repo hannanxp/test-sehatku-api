@@ -10,7 +10,7 @@
     </div>
 
 
-    <table>
+    <table class="table table-bordered">
       <tr>
         <th>Nama</th>
         <th>Foto</th>
