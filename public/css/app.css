@@ -242,6 +242,10 @@ body {
   cursor: pointer;
 }
 
+.form-group .alert-danger {
+  margin-top: 4px;
+}
+
 /**/
 
 

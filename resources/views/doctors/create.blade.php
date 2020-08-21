@@ -10,15 +10,6 @@
   </div>
   @endif
 
-  @if ($errors->any())
-  <div class="alert alert-danger">
-    <ul>
-      @foreach ($errors->all() as $error)
-      <li>{{ $error }}</li>
-      @endforeach
-    </ul>
-  </div><br />
-  @endif
   <form method="post" action="{{ route('doctors.store') }}">
     @csrf
 
@@ -32,13 +23,17 @@
             <input type="file" id="file-photo" />
           </div>
           <div class="btn-upload" id="btn-file-upload"> + Upload Foto</div>
+          <div class="form-group">
+            <input type="hidden" name="photo" id="input-photo" value="{{old('photo')}}">
+            @error('photo')
+              <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
+          </div>
           <div class="text-upload">
             Format gambar .jpg .jpeg .png dan ukuran minimum 300 x 300px dan Max Size 100kb
           </div>
         </div>  
-        <div class="form-group">
-          <input type="hidden" name="photo" id="input-photo" value="{{old('photo')}}">
-        </div>
+        
       </div>
       <div class="col-md-10">
         <div class="row">
@@ -68,6 +63,9 @@
                 <div class="col-sm-8">
                   <input type="text" class="form-control" name="fullname" value="{{old('fullname')}}"/>
                 </div>
+                @error('fullname')
+                <div style="margin-left: 15px" class="alert alert-danger">{{ $message }}</div>
+                @enderror
               </div>
             </div>
           </div>
@@ -84,6 +82,9 @@
                          <label class="form-check-label" for="genderWanita">Wanita</label>
                 </div>
               </div>
+              @error('gender')
+                <div class="alert alert-danger">{{ $message }}</div>
+              @enderror
             </div>
           </div>
         </div>
@@ -97,12 +98,18 @@
                 <option value="{{$sp->id}}"  @if (old('doctor_specialist_id') == $sp->id) selected="selected" @endif >{{$sp->name}}</option>
                 @endforeach
               </select>
+              @error('doctor_specialist_id')
+                <div class="alert alert-danger">{{ $message }}</div>
+              @enderror
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">    
               <label class="input-label" for="experience">Pengalaman</label>
-              <input type="text" class="form-control" name="experience" value="{{old('experience')}}"/>
+              <input type="text" class="form-control @error('experience') is-invalid @enderror" name="experience" value="{{old('experience')}}"/>
+              @error('experience')
+                <div class="alert alert-danger">{{ $message }}</div>
+              @enderror
             </div>
           </div>
         </div>
@@ -112,12 +119,18 @@
             <div class="form-group">    
               <label class="input-label" for="education">Pendidikan Terakhir</label>
               <input type="text" class="form-control" name="education" value="{{old('education')}}"/>
+              @error('education')
+                <div class="alert alert-danger">{{ $message }}</div>
+              @enderror
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">    
               <label class="input-label" for="str_no">No. STR</label>
               <input type="text" class="form-control" name="str_no" value="{{old('str_no')}}"/>
+              @error('str_no')
+                <div class="alert alert-danger">{{ $message }}</div>
+              @enderror
             </div>
           </div>
         </div>
@@ -127,12 +140,18 @@
             <div class="form-group">    
               <label class="input-label" for="place">Tempat Praktik</label>
               <input type="text" class="form-control" name="place" value="{{old('place')}}"/>
+              @error('place')
+                <div class="alert alert-danger">{{ $message }}</div>
+              @enderror
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">    
               <label class="input-label" for="sip_no">No. SIP</label>
               <input type="text" class="form-control" name="sip_no" value="{{old('sip_no')}}"/>
+              @error('sip_no')
+                <div class="alert alert-danger">{{ $message }}</div>
+              @enderror
             </div>
           </div>
         </div>
@@ -145,12 +164,18 @@
                 <option style="color: #64da6e" value="active" @if (old('status') == 'active') sinactiveelected="selected" @endif >Aktif</option>
                 <option style="color: #ff0000" value="inactive" @if (old('status') == 'inactive') selected="selected" @endif >Tidak Aktif</option>
               </select>
+              @error('status')
+                <div class="alert alert-danger">{{ $message }}</div>
+              @enderror
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">    
               <label class="input-label" for="phone">No. Handphone</label>
               <input type="text" class="form-control" name="phone" value="{{old('phone')}}"/>
+              @error('phone')
+                <div class="alert alert-danger">{{ $message }}</div>
+              @enderror
             </div>
           </div>
         </div>
@@ -160,6 +185,9 @@
             <div class="form-group">    
               <label class="input-label" for="email">Email</label>
               <input type="text" class="form-control" name="email" value="{{old('email')}}"/>
+              @error('email')
+                <div class="alert alert-danger">{{ $message }}</div>
+              @enderror
             </div>
           </div>
           <div class="col-md-6">
@@ -167,6 +195,9 @@
               <label class="input-label" for="password">Password</label>
               <input type="password" class="form-control" name="password" id="input-password"/>
               <div id="pwd-reset-text">RESET</div>
+              @error('password')
+                <div class="alert alert-danger">{{ $message }}</div>
+              @enderror
             </div>
           </div>
         </div>
@@ -176,6 +207,9 @@
             <div class="form-group">    
               <label class="input-label" for="description">Deskripsi</label>
               <textarea rows="4" class="form-control" name="description">{{old('description')}}</textarea>
+              @error('description')
+                <div class="alert alert-danger">{{ $message }}</div>
+              @enderror
             </div>
           </div>
         </div>
