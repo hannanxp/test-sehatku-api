@@ -50,7 +50,18 @@ class DoctorController extends Controller
             'place' => 'required|string|max:100',
             'sip_no' => 'required|string|max:100',
             'status' => 'required|in:active,inactive',
-            'phone' => 'required|max:15',
+            'phone' => [
+                'required',
+                'max:15',
+                function ($attribute, $value, $fail) {
+                    if (substr($value, 0, 2) !== '08' && substr($value, 0, 4) !== '+628') {
+                        $fail('No. Handphone harus berformat 08xx atau +628xx.');
+                    } else if (!is_numeric(substr($value, 1))) {
+                        $fail('No. Handphone harus berformat 08xx atau +628xx.');
+                    }
+                    
+                },
+            ],
             'email' => 'required|email',
             'password' => [
                 'required',
