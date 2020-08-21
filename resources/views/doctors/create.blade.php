@@ -50,7 +50,7 @@
                   </select>
                 </div>
                 <div class="col-sm-8">
-                  <input type="text" class="form-control" name="fullname"/>
+                  <input type="text" class="form-control" name="fullname" value="{{old('fullname')}}"/>
                 </div>
               </div>
             </div>
@@ -60,11 +60,11 @@
               <label for="gender">Jenis Kelamin</label>
               <div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="gender" id="genderPria" value="pria">
+                  <input class="form-check-input" type="radio" name="gender" id="genderPria" value="pria" @if(old('gender') == "pria") checked @endif >
                   <label class="form-check-label" for="genderPria">Pria</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="gender" id="genderWanita" value="wanita">
+                  <input class="form-check-input" type="radio" name="gender" id="genderWanita" value="wanita" @if(old('gender') == "wanita") checked @endif>
                   <label class="form-check-label" for="genderWanita">Wanita</label>
                 </div>
               </div>
@@ -86,7 +86,7 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label for="experience">Pengalaman</label>
-              <input type="text" class="form-control" name="experience"/>
+              <input type="text" class="form-control" name="experience" value="{{old('experience')}}"/>
             </div>
           </div>
         </div>
