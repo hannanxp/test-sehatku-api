@@ -149,7 +149,7 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label for="password">Password</label>
-              <input type="password" class="form-control" name="password" value="{{old('password')}}"/>
+              <input type="password" class="form-control" name="password"/>
             </div>
           </div>
         </div>
