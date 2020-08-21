@@ -91,7 +91,7 @@ body {
 #my-app-spacer {
   background-color: #2b8e8e;
   min-height: 60px;
-  height: calc(100vh - 900px);
+  height: calc(100vh - 400px);
 }
 #my-app-content {
   width: calc(100vw - 170px);  

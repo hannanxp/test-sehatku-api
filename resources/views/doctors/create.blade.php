@@ -26,7 +26,7 @@
       <div class="col-md-2">
         <div class="text-center">
           <div>
-            <img style="width: 120px" id="photo-preview" src="{{old('photo') ? : asset('img/default.png') }}">
+            <img style="width: 120px" id="photo-preview" src="{{old('photo') ? : asset('img/default.jpg') }}">
           </div>
           <div>
             <input type="file" id="file-photo" />
@@ -175,7 +175,7 @@
           <div class="col-md-12">
             <div class="form-group">    
               <label class="input-label" for="description">Deskripsi</label>
-              <textarea rows="5" class="form-control" name="description">{{old('description')}}</textarea>
+              <textarea rows="4" class="form-control" name="description">{{old('description')}}</textarea>
             </div>
           </div>
         </div>

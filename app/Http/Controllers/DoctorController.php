@@ -95,7 +95,7 @@ class DoctorController extends Controller
         $doctor->save();
         
         //return redirect('/doctors')->with('success', 'Doctor saved!');
-        return redirect('/doctors/create')->with('success', 'Doctor saved!');
+        return redirect('/doctors/create')->with('success', 'Data dokter berhasil tersimpan!');
     }
 
     /**
