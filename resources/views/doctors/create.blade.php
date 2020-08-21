@@ -57,7 +57,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="first_name">Nama Dokter</label>
+              <label class="input-label" for="first_name">Nama Dokter</label>
               <div class="form-group row">
                 <div class="col-sm-4">
                   <select name="title" class="form-control">
@@ -73,7 +73,7 @@
           </div>
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="gender">Jenis Kelamin</label>
+              <label class="input-label" for="gender">Jenis Kelamin</label>
               <div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="gender" id="genderPria" value="pria" @if(old('gender') == "pria") checked @endif >
@@ -91,7 +91,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="doctor_specialist_id">Spesialisasi</label>
+              <label class="input-label" for="doctor_specialist_id">Spesialisasi</label>
               <select name="doctor_specialist_id" class="form-control">
                 @foreach ($specialists as $sp)
                 <option value="{{$sp->id}}"  @if (old('doctor_specialist_id') == $sp->id) selected="selected" @endif >{{$sp->name}}</option>
@@ -101,7 +101,7 @@
           </div>
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="experience">Pengalaman</label>
+              <label class="input-label" for="experience">Pengalaman</label>
               <input type="text" class="form-control" name="experience" value="{{old('experience')}}"/>
             </div>
           </div>
@@ -110,13 +110,13 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="education">Pendidikan Terakhir</label>
+              <label class="input-label" for="education">Pendidikan Terakhir</label>
               <input type="text" class="form-control" name="education" value="{{old('education')}}"/>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="str_no">No. STR</label>
+              <label class="input-label" for="str_no">No. STR</label>
               <input type="text" class="form-control" name="str_no" value="{{old('str_no')}}"/>
             </div>
           </div>
@@ -125,13 +125,13 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="place">Tempat Praktik</label>
+              <label class="input-label" for="place">Tempat Praktik</label>
               <input type="text" class="form-control" name="place" value="{{old('place')}}"/>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="sip_no">No. SIP</label>
+              <label class="input-label" for="sip_no">No. SIP</label>
               <input type="text" class="form-control" name="sip_no" value="{{old('sip_no')}}"/>
             </div>
           </div>
@@ -140,7 +140,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="status">Status</label>
+              <label class="input-label" for="status">Status</label>
               <select name="status" class="form-control">
                 <option value="active" @if (old('status') == 'active') sinactiveelected="selected" @endif >Aktif</option>
                 <option value="inactive" @if (old('status') == 'inactive') selected="selected" @endif >Tidak Aktif</option>
@@ -149,7 +149,7 @@
           </div>
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="phone">No. Handphone</label>
+              <label class="input-label" for="phone">No. Handphone</label>
               <input type="text" class="form-control" name="phone" value="{{old('phone')}}"/>
             </div>
           </div>
@@ -158,13 +158,13 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="email">Email</label>
+              <label class="input-label" for="email">Email</label>
               <input type="text" class="form-control" name="email" value="{{old('email')}}"/>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">    
-              <label for="password">Password</label>
+              <label class="input-label" for="password">Password</label>
               <input type="password" class="form-control" name="password"/>
             </div>
           </div>
@@ -173,7 +173,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">    
-              <label for="description">Deskripsi</label>
+              <label class="input-label" for="description">Deskripsi</label>
               <textarea class="form-control" name="description">{{old('description')}}</textarea>
             </div>
           </div>
