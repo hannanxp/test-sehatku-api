@@ -26,7 +26,7 @@
       <div class="col-md-2">
         <div class="text-center">
           <div>
-            <img style="width: 120px" id="photo-preview" src="{{asset('img/foto.jpg')}}">
+            <img style="width: 120px" id="photo-preview" src="{{old('photo') ? : asset('img/foto.jpg') }}">
           </div>
           <div>
             <input type="file" id="file-photo" />
@@ -37,7 +37,7 @@
           </div>
         </div>  
         <div class="form-group">
-          <input type="hidden" name="photo" id="input-photo">
+          <input type="hidden" name="photo" id="input-photo" value="{{old('photo')}}">
         </div>
       </div>
       <div class="col-md-10">
