@@ -95,13 +95,13 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label for="education">Pendidikan Terakhir</label>
-              <input type="text" class="form-control" name="education"/>
+              <input type="text" class="form-control" name="education" value="{{old('education')}}"/>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">    
               <label for="str_no">No. STR</label>
-              <input type="text" class="form-control" name="str_no"/>
+              <input type="text" class="form-control" name="str_no" value="{{old('str_no')}}"/>
             </div>
           </div>
         </div>
@@ -110,13 +110,13 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label for="place">Tempat Praktik</label>
-              <input type="text" class="form-control" name="place"/>
+              <input type="text" class="form-control" name="place" value="{{old('place')}}"/>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">    
               <label for="sip_no">No. SIP</label>
-              <input type="text" class="form-control" name="sip_no"/>
+              <input type="text" class="form-control" name="sip_no" value="{{old('sip_no')}}"/>
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label for="phone">No. Handphone</label>
-              <input type="text" class="form-control" name="phone"/>
+              <input type="text" class="form-control" name="phone" value="{{old('phone')}}"/>
             </div>
           </div>
         </div>
@@ -143,13 +143,13 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label for="email">Email</label>
-              <input type="text" class="form-control" name="email"/>
+              <input type="text" class="form-control" name="email" value="{{old('email')}}"/>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">    
               <label for="password">Password</label>
-              <input type="password" class="form-control" name="password"/>
+              <input type="password" class="form-control" name="password" value="{{old('password')}}"/>
             </div>
           </div>
         </div>
@@ -158,8 +158,8 @@
           <div class="col-md-12">
             <div class="form-group">    
               <label for="description">Deskripsi</label>
-              <textarea class="form-control" name="description"></textarea>
-            </div>
+              <textarea class="form-control" name="description" value="{{old('description')}}"></textarea>
+            </div>description
           </div>
         </div>
 
