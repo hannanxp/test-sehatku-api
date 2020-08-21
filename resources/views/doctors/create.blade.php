@@ -26,7 +26,7 @@
       <div class="col-md-2">
         <div class="text-center">
           <div>
-            <img style="width: 120px" id="photo-preview" src="{{old('photo') ? : asset('img/foto.jpg') }}">
+            <img style="width: 120px" id="photo-preview" src="{{old('photo') ? : asset('img/default.png') }}">
           </div>
           <div>
             <input type="file" id="file-photo" />
@@ -41,6 +41,19 @@
         </div>
       </div>
       <div class="col-md-10">
+        <div class="row">
+          <div class="info-dokter">Informasi Dokter</div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-12">
+            <label class="input-label" for="first_name">Dokter ID</label>  
+            <div class="form-group row">
+                <div class="input-label-value">0000000000</div>
+            </div>
+          </div>
+        </div>
+        
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">    

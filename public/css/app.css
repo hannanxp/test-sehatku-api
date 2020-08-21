@@ -173,6 +173,10 @@ body {
   cursor: pointer;
   margin-bottom: 10px;
 }
+.btn-upload:hover {
+  background-color: #2b8e8e;
+}
+
 .text-upload{
   font-size: 10px;
   text-align: center;
@@ -180,6 +184,25 @@ body {
 }
 #file-photo {
   display: none;
+}
+
+.info-dokter {
+  font-size: 18px;
+  font-weight: 600;
+  color: #36454f;
+  margin-bottom: 36px;
+  margin-left: 15px;
+}
+.input-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #36454f;
+}
+.input-label-value {
+  font-size: 14px;
+  font-weight: normal;
+  color: #36454f; 
+  padding-left: 15px;
 }
 
 /**/
