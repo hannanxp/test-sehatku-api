@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Doctor;
+use App\DoctorSpecialist;
 
 class DoctorController extends Controller
 {
@@ -26,7 +27,8 @@ class DoctorController extends Controller
      */
     public function create()
     {
-        return view('doctors.create');
+        $specialists = DoctorSpecialist::orderBy('name')->get();
+        return view('doctors.create', compact('specialists'));
     }
 
     /**

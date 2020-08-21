@@ -77,8 +77,9 @@
             <div class="form-group">    
               <label for="doctor_specialist_id">Spesialisasi</label>
               <select name="doctor_specialist_id" class="form-control">
-                <option value="2">Akupuntur</option>
-                <option value="4">Bedah Anak</option>
+                @foreach ($specialists as $sp)
+                <option value="{{$sp->id}}">{{$sp->name}}</option>
+                @endforeach
               </select>
             </div>
           </div>
