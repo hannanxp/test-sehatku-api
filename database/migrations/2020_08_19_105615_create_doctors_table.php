@@ -30,7 +30,7 @@ class CreateDoctorsTable extends Migration
             $table->string('email');
             $table->string('password');
             $table->text('description');
-            $table->binary('photo');
+            $table->longText('photo');
             
             $table->timestamps();
         });
