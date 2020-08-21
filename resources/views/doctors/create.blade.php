@@ -165,7 +165,8 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label class="input-label" for="password">Password</label>
-              <input type="password" class="form-control" name="password"/>
+              <input type="password" class="form-control" name="password" id="input-password"/>
+              <div id="pwd-reset-text">RESET</div>
             </div>
           </div>
         </div>
@@ -240,6 +241,10 @@
       };
       $("#input-status").change(function(){
           checkStatus();
+      });
+      
+      $("#pwd-reset-text").click(function(){
+          $("#input-password").val("");
       });
       
       
