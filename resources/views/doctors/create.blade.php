@@ -182,4 +182,8 @@
   </div>
 </div>
 
+<script>
+    console.log("hellooo");
+</script>
+
 @endsection
