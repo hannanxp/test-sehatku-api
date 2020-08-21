@@ -26,7 +26,7 @@
       <div class="col-md-2">
         <div class="text-center">
           <div>
-            <img src="{{asset('img/foto.jpg')}}">
+            <img style="width: 120px" id="photo-preview" src="{{asset('img/foto.jpg')}}">
           </div>
           <div>
             <input type="file" id="file-photo" />
@@ -37,7 +37,7 @@
           </div>
         </div>  
         <div class="form-group">
-          <textarea class="form-control" name="photo"></textarea>
+          <input type="hidden" name="photo" id="input-photo">
         </div>
       </div>
       <div class="col-md-10">
@@ -186,17 +186,31 @@
 </div>
 
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
+
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            $("#photo-preview").attr("src", e.target.result);
+            $("#input-photo").val(e.target.result);
+          };
+
+          reader.readAsDataURL(input.files[0]); // convert to base64 string
+        }
+      }
+
       $("#btn-file-upload").click(function () {
-        $("#file-photo").trigger('click');
+        $("#file-photo").trigger("click");
       });
 
       $("#file-photo").change(function () {
-          console.log($(this).val());
+        readURL(this);
       });
-        
+
     });
-    
+
 </script>
 
 @endsection
