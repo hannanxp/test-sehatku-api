@@ -178,7 +178,9 @@ body {
   text-align: center;
   color: #a7a7a7;
 }
-
+#file-photo {
+  display: none;
+}
 
 /**/
 

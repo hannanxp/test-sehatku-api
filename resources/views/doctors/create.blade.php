@@ -28,7 +28,10 @@
           <div>
             <img src="{{asset('img/foto.jpg')}}">
           </div>
-          <div class="btn-upload"> + Upload Foto</div>
+          <div>
+            <input type="file" id="file-photo" />
+          </div>
+          <div class="btn-upload" id="btn-file-upload"> + Upload Foto</div>
           <div class="text-upload">
             Format gambar .jpg .jpeg .png dan ukuran minimum 300 x 300px dan Max Size 100kb
           </div>
@@ -61,11 +64,11 @@
               <div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="gender" id="genderPria" value="pria" @if(old('gender') == "pria") checked @endif >
-                  <label class="form-check-label" for="genderPria">Pria</label>
+                         <label class="form-check-label" for="genderPria">Pria</label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="gender" id="genderWanita" value="wanita" @if(old('gender') == "wanita") checked @endif>
-                  <label class="form-check-label" for="genderWanita">Wanita</label>
+                         <label class="form-check-label" for="genderWanita">Wanita</label>
                 </div>
               </div>
             </div>
@@ -183,9 +186,17 @@
 </div>
 
 <script>
-    jQuery(function($){
-       
+    $(document).ready(function() {
+      $("#btn-file-upload").click(function () {
+        $("#file-photo").trigger('click');
+      });
+
+      $("#file-photo").change(function () {
+          console.log($(this).val());
+      });
+        
     });
+    
 </script>
 
 @endsection
