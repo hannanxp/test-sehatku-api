@@ -61,7 +61,7 @@
                   </select>
                 </div>
                 <div class="col-sm-8">
-                  <input type="text" class="form-control" name="fullname" value="{{old('fullname')}}"/>
+                  <input type="text" class="form-control @error('fullname') is-invalid @enderror" name="fullname" value="{{old('fullname')}}"/>
                 </div>
                 @error('fullname')
                 <div class="col-sm-12">
@@ -120,7 +120,7 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label class="input-label" for="education">Pendidikan Terakhir</label>
-              <input type="text" class="form-control" name="education" value="{{old('education')}}"/>
+              <input type="text" class="form-control @error('education') is-invalid @enderror" name="education" value="{{old('education')}}"/>
               @error('education')
                 <div class="alert alert-danger">{{ $message }}</div>
               @enderror
@@ -129,7 +129,7 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label class="input-label" for="str_no">No. STR</label>
-              <input type="text" class="form-control" name="str_no" value="{{old('str_no')}}"/>
+              <input type="text" class="form-control @error('str_no') is-invalid @enderror" name="str_no" value="{{old('str_no')}}"/>
               @error('str_no')
                 <div class="alert alert-danger">{{ $message }}</div>
               @enderror
@@ -141,7 +141,7 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label class="input-label" for="place">Tempat Praktik</label>
-              <input type="text" class="form-control" name="place" value="{{old('place')}}"/>
+              <input type="text" class="form-control @error('place') is-invalid @enderror" name="place" value="{{old('place')}}"/>
               @error('place')
                 <div class="alert alert-danger">{{ $message }}</div>
               @enderror
@@ -150,7 +150,7 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label class="input-label" for="sip_no">No. SIP</label>
-              <input type="text" class="form-control" name="sip_no" value="{{old('sip_no')}}"/>
+              <input type="text" class="form-control @error('sip_no') is-invalid @enderror" name="sip_no" value="{{old('sip_no')}}"/>
               @error('sip_no')
                 <div class="alert alert-danger">{{ $message }}</div>
               @enderror
@@ -174,7 +174,7 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label class="input-label" for="phone">No. Handphone</label>
-              <input type="text" class="form-control" name="phone" value="{{old('phone')}}"/>
+              <input type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{old('phone')}}"/>
               @error('phone')
                 <div class="alert alert-danger">{{ $message }}</div>
               @enderror
@@ -186,7 +186,7 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label class="input-label" for="email">Email</label>
-              <input type="text" class="form-control" name="email" value="{{old('email')}}"/>
+              <input type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{old('email')}}"/>
               @error('email')
                 <div class="alert alert-danger">{{ $message }}</div>
               @enderror
@@ -195,7 +195,7 @@
           <div class="col-md-6">
             <div class="form-group">    
               <label class="input-label" for="password">Password</label>
-              <input type="password" class="form-control" name="password" id="input-password"/>
+              <input type="password" class="form-control @error('password') is-invalid @enderror" name="password" id="input-password"/>
               <div id="pwd-reset-text">RESET</div>
               @error('password')
                 <div class="alert alert-danger">{{ $message }}</div>
@@ -208,7 +208,7 @@
           <div class="col-md-12">
             <div class="form-group">    
               <label class="input-label" for="description">Deskripsi</label>
-              <textarea rows="4" class="form-control" name="description">{{old('description')}}</textarea>
+              <textarea rows="4" class="form-control @error('description') is-invalid @enderror" name="description">{{old('description')}}</textarea>
               @error('description')
                 <div class="alert alert-danger">{{ $message }}</div>
               @enderror
