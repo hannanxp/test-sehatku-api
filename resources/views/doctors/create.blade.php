@@ -49,7 +49,7 @@
           <div class="col-md-12">
             <label class="input-label" for="first_name">Dokter ID</label>  
             <div class="form-group row">
-                <div class="input-label-value">0000000000</div>
+                <div class="input-label-value">DR-014242145</div>
             </div>
           </div>
         </div>
@@ -182,8 +182,11 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">    
-              <a class="btn btn-primary-outline">Batal</a> 
-              <button type="submit" class="btn btn-primary">Simpan</button>
+              
+              <button type="submit" class="btn-save">Simpan</button>
+              
+              <div class="btn-cancel">Batal</div> 
+              
             </div>
           </div>
         </div>

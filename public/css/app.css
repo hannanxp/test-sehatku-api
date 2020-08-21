@@ -205,6 +205,35 @@ body {
   padding-left: 15px;
 }
 
+.btn-cancel {
+  width: 204px;
+  height: 44px;
+  border-radius: 4px;
+  border: solid 1px #70cbcf;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #70cbcf;
+  float: right;
+  padding-top: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.btn-save {
+  width: 204px;
+  height: 44px;
+  border-radius: 4px;
+  background-color: #2b8e8e;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  border: 0;
+  float: right;
+}
+
 /**/
 
 
